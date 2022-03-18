@@ -1,0 +1,270 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    --primary-color: #f8f9fa;
+}
+
+body {
+background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+position: relative;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 60vw;
+    position: absolute;
+    top: 10rem;
+    left: 26rem;
+    min-height: 30rem;
+}
+
+.question {
+    width: 80%;
+    padding: 0.4rem 2rem;
+    min-height: 4rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+p {
+ color: #10002b;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ text-align: center;
+}
+
+.list-answer {
+   width: 80%;
+   min-height: 10rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 2rem;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 2rem;
+}
+
+.answer {
+   background-color: var(--primary-color);
+   border: none;
+   border-radius: 12px;
+}
+
+
+
+.answer > p:hover {
+    cursor: pointer;
+}
+
+.answer > p {
+   margin-top: 1.3rem;
+   min-height: 100%;
+}
+
+.clicked {
+    background-color: #f48c06;
+}
+
+.true-answer {
+    background-color: #5ae75a;
+}
+
+.bad-answer {
+    background-color: #ee2400;
+}
+
+.question-number, .timer {
+    width: 9rem;
+    height: 6rem;
+    border: 2px solid #170a2c98;
+    border-radius: 8px;
+    position: absolute;
+    top: 2rem;
+    left: 75rem;
+}
+
+.number {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.game-score {
+    width: 80%;
+    height: 18rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    z-index: 10;
+    position: relative;
+    top: -18rem;
+    left: 7.2rem;
+    display: none;
+}
+
+.quiz {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    color: #2b2e31;
+    letter-spacing: 0;
+    position: relative;
+    top: -2rem;
+ 
+}
+
+.quiz-2 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: -1.2rem;
+    position: relative;
+    top: -2.5rem;
+
+}
+
+.score {
+    position: relative;
+    top: -5.5rem;
+    font-size: 3.2rem;
+}
+
+.btn {
+    outline: none;
+    border: 2px solid #170a2c98;
+    width: 7.5rem;
+    padding: 0.5rem 0.3rem;
+    border-radius: 5px;
+    position: relative;
+    top: 14rem;
+    left: 25rem;
+    text-transform: uppercase;
+    color: #101418;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    z-index: 12;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.timer {
+    width: 11rem;
+    position: absolute;
+    top: 2rem;
+    left: 33.5rem;
+}
+
+.clock {
+    transform: scale(2.5);
+    position: relative;
+    top: 0;
+    left: 10.3rem;
+}
+
+.time-counter {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin: 0;
+    position: relative;
+    top: 1.7rem;
+    left: -1.2rem;
+    color: var(--primary-color);
+}
+
+@media all and (max-width: 450px) {
+    .container {
+        width: 100vw;
+        position: absolute;
+        top: 10rem;
+        left: -0.5rem;
+        min-height: 30rem;
+    }
+    .list-answer {
+        width: 90%;
+        min-height: 10rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+     }
+
+     .question {
+        width: 90%;
+        padding: 0.4rem 2rem;
+        font-size: 0.9rem;
+    
+    }
+    .answer > p {
+        margin-top: 0.8rem;
+        min-height: 100%;
+        font-size: 0.7rem;
+     }
+
+     .question > p {
+         text-align: center;
+         width: 130%;
+         margin-left: -1.5rem;
+     }
+     .question-number {
+        width: 20rem;
+        height: 6rem;
+        border: 2px solid #170a2c98;
+        border-radius: 8px;
+        position: absolute;
+        top: 35rem;
+        left: 0.3rem;
+        text-align: center;
+    }
+
+    .timer {
+        width: 17rem;
+        position: absolute;
+        top: 2rem;
+        left: 0.3rem;
+        text-align: center;
+    }
+    .clock {
+        transform: scale(2.5);
+        position: relative;
+        top: 0;
+        left: 8.3rem;
+    }
+
+    .game-score {
+        width: 95%;
+        height: 19rem;
+        position: relative;
+        top: -19rem;
+        left: 0.5rem;
+        display: none;
+    }
+
+    .btn {
+        position: relative;
+        top: 15rem;
+        left: 5.5rem;
+    }
+}

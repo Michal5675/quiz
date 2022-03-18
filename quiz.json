@@ -1,0 +1,45 @@
+{
+    "questions" : {
+       "1": "Które z wymienonych jezior jest największe ?",
+       "2":"Co oznacza skrót RIGCZ ?",
+       "3": "Kim jest Donald Tusk ?",
+       "4": "Michael Jordan zdobył tytuły mistrza NBA z drużyną",
+       "5": "Temudżyn to inaczej",
+       "6": "Muł to krzyżówka",
+       "7": "Słynna bitwa pod Racławicami miała miejsce w czasie",
+       "8": "Wzór Spejsona na piwo to",
+       "9": "Tradycyjne gruzińskie chinkali wypełnione są",
+       "10": "Kto został królem Anglii po bitwie pod Hastings?"
+      
+    },
+    "options" : {
+        "1":["Morze Kaspijskie", "Wiktorii", "Wielkie Niewolnicze", "Tanganika"],
+        "2":["Rozum i godność człowieka", "Rapuj i graj człowieku", "Rak i gówniany czas", "Ramanadam"],
+        "3": ["Osłem", "Politykiem", "Volksdeutchem", "Skoczkiem narciarskim"],
+        "4": ["Houston Rockets", "Chicago Bulls", "Los Angeles Lakers", "Boston Celtics"], 
+        "5": ["Czyngis-chan", "Sulejman Wspaniały", "Marco Polo", "Kublai-chan"], 
+        "6": ["Klaczy osła z ogierem konia", "Krowy i ogiera konia", "Klaczy konia i ogiera osła", "Byka i klaczy osła"],
+        "7": ["powstania styczniowego", "powstania listopadowego", "insurekcji kościuszkowskiej", "powstania grudniowego"],
+        "8": ["cena/procenty", "kto by tam liczył, ważne że trzepie", "masa/objętość", "rozmiar butelki do kwadratu/wysokość"],
+        "9": ["kozim serem", "mięsem", "owczym serem", "pieczarkami"],
+        "10": ["Karol Zdobywca", "Henryk Zdobywca", "Harald Haadrada", "Wilhelm Zdobywca"]
+        
+    },
+    "real_answer": [
+         "Morze Kaspijskie", 
+        "Rozum i godność człowieka", 
+        "Politykiem",
+        "Chicago Bulls", 
+        "Czyngis-chan", 
+        "Klaczy konia i ogiera osła",
+        "insurekcji kościuszkowskiej",
+        "cena/procenty", 
+        "mięsem", 
+        "Wilhelm Zdobywca"
+    
+    ]   
+    
+    
+}
+
+
